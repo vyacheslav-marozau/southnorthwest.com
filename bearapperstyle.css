@@ -1,0 +1,196 @@
+@font-face {font-family:Druk Web; src: url(fonts/DrukCond-Super.ttf);}
+@font-face {font-family:Maison Neue Book; src: url(fonts/MaisonNeue-Book.ttf);}
+.main {
+               font-size: 15px;
+ color: #777777;
+font-family:"Maison Neue Book", sans-serif;
+line-height: 1.4;
+width: 800px;
+max-width: 100%;
+}
+.pannel-heading a, ul li {
+font-family:"Druk Web", sans-serif;
+}
+ul li {
+text-size: 20px;
+}
+.main a {
+font-weight: 400;
+text-decoration: none;
+}
+.main h2 {
+font-weight: 400;
+color: #333333;
+text-size: 28px;
+text-transform: uppercase;
+text-align: center;
+}
+.main strong {
+color: #ea9629; /* #96FF00; */
+}
+.pannel-heading {
+margin-top: 5px;
+}
+.pannel-heading a {
+background: #333333;
+color: #ffffff;
+display: block;
+padding: 10px 40px 10px 15px;
+position: relative;
+transition: .3s; 
+font-size: 28px;
+}
+.pannel-heading a:hover {
+background: hsl(90, 92%, 25%);
+}
+.pannel-heading a i {
+font-size: 29px;
+width: 29px;
+}
+.pannel-heading a::after {
+content: "\f103";
+font-family: "FontAwesome";
+position: absolute;
+right: 15px;
+transition: .3s; 
+}
+.pannel-heading.in a::after {
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+.pannel-heading.in a {
+background: #96FF00; /*#abc000; #ea9629; */
+}
+.main h5 {
+font-size: 20px;
+margin: 10px 0;
+}
+.pannel-collapse {
+display: none;
+padding-bottom: 20px;
+}
+.wrapper-ul  {
+display: flex;
+justify-content: space-around;
+}
+.wrapper-ul ul {
+margin-top: 5px;
+padding-left: 20px;
+list-style-type: none;
+}
+.wrapper-ul li {
+position: relative;
+}
+.wrapper-ul li::before {
+content: '\f152';
+font-family: "FontAwesome";
+position: absolute;
+left: -20px;
+top: 0;
+color: #A6F8DB;
+transition: .5s; 
+}
+.wrapper-ul li a {
+color: darkred;
+}
+.wrapper-ul li:first-child::before {
+content: '';
+}
+.wrapper-ul li:first-child {
+color: hsl(355, 88%, 65%);
+font-weight: 500;
+}
+.wrapper-ul li a:hover {
+color: hsl(45, 95%, 40%);
+}
+.wrapper-ul li a:hover::before {
+-webkit-transform: translateX(4px);
+-moz-transform: translateX(4px);
+-o-transform: translateX(4px);
+transform: translateX(4px);
+color: hsl(45, 95%, 62%);
+}
+.button {
+margin-top: 20px;
+}
+.button a {
+background: #ea9629;
+color: #ffffff;
+padding: 8px 7px;
+border-radius: 8px;
+border: 5px, solid, hsl(62, 90%, 55%);
+transition: .3s;
+}
+.button a:hover {
+background: hsl(62, 90%, 55%);
+}
+
+.dws {
+position: relative;
+left: 50%;
+-webkit-transform: translate(-50%, 10%);
+-moz-transform: translate(-50%, 10%);
+-ms-transform: translate(-50%, 10%);
+-o-transform: translate(-50%, 10%);
+transform: translate(-50%, 10%);
+width: 16.25em;
+}
+.butt {
+border: 3px solid #ea9629;
+font-size: 1.25em;
+color: #ea9629;
+text-decoration: none;
+text-transform: uppercase;
+display: block;
+width: 13.2em;
+height: 2.6em;
+position: relative;
+text-align: center;
+line-height: 2.5em;
+font-family: Arial, sans-serif;
+transition: .5s;
+overflow: hidden;
+}
+#trueCheck {
+font-size: 0.8em;
+width: 26em;
+margin: 0 auto;
+}
+.pulse {
+background: hsl(38, 98%, 60%);
+border-radius: 50%;
+animation: pulse .7s ease-out;
+transform: scale(0);
+position: absolute;
+}
+@keyframes pulse {
+       to {
+            transform: scale(2);
+            background-color: #fff;
+            opacity: 0;
+            }
+}
+.butt::before, .butt::after { 
+position: absolute;
+content: '';
+width: 100%;
+height: 100%;
+background: #ea9629;
+left: -100%;
+top: 0;
+opacity: .5;
+transition: .5s; 
+z-index: -1;
+} 
+.butt::after {
+opacity: 1;
+transition-delay: .2s;
+}
+.butt:hover {
+color: #eeffff;
+}
+.butt:hover::before, .butt:hover::after {
+left: 0;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <script src="scripts/jquery-3.3.1.min.js"></script>
+   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+   <link rel="stylesheet" href="css/register.css" type="text/css">
+	<script src="scripts/register.js"></script>
+   <title>Register</title>
+</head>
+<body>
+            <div class="dws-wrapper">
+                   <div class="dws-form">
+                           <label class="tab active" title="Tab 1">Authorisation</label>
+                           <label class="tab" title="Tab 2">Registration</label>
+                           <form id="tab1" class="tab-form active">
+                                   <input class="input" type="email" placeholder="Write Your E-Mail">
+                                   <input class="input" type="password" placeholder="Write Your Password">
+                                   <a href="#" class="button">Log In</a>
+                                   <ul class="socialMedia">
+                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                   </ul>
+                                   <a id="forgotEmail" href="#">I forgot My e-mail or password</a>
+                          </form>
+                          <form id="tab2" class="tab-form">
+                                   <input class="input" id="tabjs1" type="email" placeholder="Write Your E-Mail">
+                                   <input class="input" id="tabjs2" type="text" placeholder="Write Your Name">
+                                   <input class="input" id="tabjs3" type="password" placeholder="Write Your Password">
+                                   <a href="#" class="button disabledBut" id="regButton">Register Now!</a>
+                                   <div class="recover"> 
+                                            <input type="checkbox" id="agreement">
+                                            <label for="agreement" title="Tab 2">Read and agree with <a href="#" class="agree">registration agreement</a></label>
+                                   </div>         
+                          </form>
+                   </div>
+            </div>
+            <div class="css-wrapper">
+                          <input type="radio" class="csstab" id="csstab-1" checked name="tabs">
+                           <label for="csstab-1">Technical Support</label>
+                            <input type="radio" class="csstab" id="csstab-2" name="tabs">
+                           <label for="csstab-2">FAQ</label>
+                            <input type="radio" class="csstab" id="csstab-3" name="tabs">
+                           <label for="csstab-3">vacancies</label>
+                          <form class="tab-form-css" id="cssform1">
+                                  <input class ="input" type="text" placeholder="Write Out Your problem">
+                                   <button type="submit" class="butSub">Send To Technical Specialist</button>
+                                   <a class="phoneNumber" href="tel:+375292741053" onclick="ga('send', 'event', { eventCategory: 'Call Enquiry', eventAction: 'Click To Call', eventLabel: 'Footer'});"><i class="fa fa-phone"></i>Or Call for additional information</a>
+                          </form>
+                          <form class="tab-form-css" id="cssform2">
+                                     <h3>Most popular questions</h3>
+                                     <ul class="questions">
+                                          <li><a href="bearapper.html">Why it's cool to be a True Rapper?</a></li>
+                                          <li><a href="#">Who is The Best Rapper -- 2Pac or Notorious B.I.G.?</a></li>
+                                          <li><a href="#">How can I get a lot of money?</a></li>
+                                          <li><a href="#">Why girls love Rappers?</a></li>
+                                          <li><a href="#">Почему фейс -- это дно?</a></li>
+                                   </ul>
+                          </form>
+                           <form class="tab-form-css" id="cssform3">
+                                     <ol class="vacancies">
+                                          <li>Front-end Developer</li>
+                                          <li>Java Script Developer</li>
+                                          <li>Junior Web-Developer</li>
+                                          <li>Middle Web-Designer</li>
+                                          <li>Senior Php-Developer</li>
+                                   </ol>
+                          </form>
+             </div>
+</body>
+</html>
