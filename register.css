@@ -1,0 +1,213 @@
+body { font-size: 1.125em;
+height: 475px;
+background-position: center bottom;
+background-image: url(../images/FindYourFast.jpg);
+	background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+.dws-wrapper {
+background-color: hsla(30, 100%, 50%, .5);
+border: 5px solid hsla( 30, 100%, 50%, .1);
+margin-bottom: 0.6em;
+}
+.tab-form, .tab-form-css {
+background-color: hsla(30, 0%, 0%, .8);
+flex-direction: column;
+flex: 8;
+}
+.tab-form {
+display: none;
+padding: 30px, 20px, 20px;
+}
+.active, #csstab-1:checked ~ #cssform1 , #csstab-2:checked ~ #cssform2, #csstab-3:checked ~ #cssform3 {
+display: flex;
+}
+.input {
+border: 2px solid Aqua;
+font-size: 0.9em;
+padding: 0.2em 0.3em;
+margin: 0.5em 0;
+display: flex;
+flex-direction: column;
+align-self: center;
+box-sizing: border-box;
+color: hsl(270, 100%, 45%);
+outline: none;
+}
+::-webkit-input-placeholder { color: #c4c9c9;} /* webkit */
+::-moz-placeholder { color: #298cad;} /* moz 19+ */
+:-moz-placeholder { color: #298cad;} /* moz 18 */
+:-ms-placeholder { color: #298cad;} /* ms */
+label.tab { 
+background-color: hsla(51, 100%, 50%, .3);
+color: hsla(30, 0%, 0%, .9);
+font-weight: 600;
+padding: 15px;
+display: inline-block;
+border-radius: 3px 3px 0 0;
+margin-bottom: -1px;
+cursor: pointer;
+}
+input[name="tabs"] + label {
+padding: 8px;
+font-size: 0.95em;
+background-color: hsla(90, 100%, 50%, .3);
+color: hsla(90, 0%, 0%, .9);
+font-weight: 300;
+display: inline-block;
+border-radius: 8px 8px 0 0;
+margin-bottom: -1px;
+cursor: pointer;
+}
+input[name="tabs"] {
+display: none;
+}
+label.tab.active {
+color: Orange;
+background: hsla(30, 0%, 0%, .8);
+}
+input[name="tabs"]:checked + label {
+color: Green;
+background: hsla(90, 0%, 0%, .8);
+border: 1px solid hsla(90, 0%, 0%, .8);
+}
+a {
+text-decoration: none;
+}
+.button { outline: none;
+margin: 0.5em 0;
+padding: 0.1875em 0.625em;
+color: #ffd700;
+display: flex;
+flex: 0 3;
+align-self: center;
+justify-content: center;
+border: 3px dashed darkgreen;
+font-size: 1.5625em;
+background-color: hsl( 355, 90%, 38%);
+text-transform: uppercase;
+} 
+.disabledBut {
+color: hsl(51, 100%, 28%);
+background-color: hsl( 355, 90%, 28%);
+border: 3px dotted gray;
+}
+input.tab {
+display: flex;
+align-self: center;
+justify-content: center;
+margin: 8px;
+font-size: 1.125rem;
+}
+.socialMedia { padding: 0;
+list-style-type: none;
+border: 3px dashed darkgreen;
+display: flex;
+justify-content: space-around;
+}
+.socialMedia li {
+display: flex;
+}
+.socialMedia li i {
+color: #ffd700;
+padding: 5px;
+font-size: 2.5em;
+display: flex;
+align-self: center;
+}
+#forgotEmail {
+display: flex;
+justify-content: center;
+align-content: center;
+font-size: 1.2em;
+height: 1.8em;
+color: #ffd700;
+}
+I.fa:hover, #forgotEmail:hover {
+color: hsla(30, 100%, 50%, .5);
+}
+.recover {
+display: flex;
+justify-content: center;
+color: #ffd700;
+font-size: 0.88em;
+height: 2.2em;
+}
+.agree {
+color: aqua;
+}
+#agreement + label {
+font-size: 0.88em;
+}
+.del {
+display: none;
+}
+.tab-form-css {
+display: none;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+color: Lime;
+}
+.visible {
+display: flex !important;
+}
+.css-wrapper {
+background-color: hsla(90, 100%, 50%, .5);
+border: 5px solid hsla( 90, 100%, 50%, .1);
+}
+.butSub {
+display: flex;
+flex: 0 3;
+align-self: center;
+justify-content: center;
+font-size: 1.125em;
+} 
+.phoneNumber {
+display:flex;
+justify-content: center;
+align-content: center;
+flex: 0 3 35px;
+color : hsla(90, 100%, 50%, .5);
+font-size: 1em;
+padding: .625em 0;
+}
+.fa-phone {
+color : hsla(90, 100%, 50%, .5);
+margin: 6px;
+font-size: 1em;
+}
+h3 {
+display: flex;
+justify-content: center;
+height: 1em;
+color: hsla(90, 100%, 50%, .5);
+padding: 0 10px;
+margin: 10px;
+} 
+.questions {
+margin: 0;
+}
+.questions li a {
+color: darkgreen;
+transition: all .5s ease-in-out;
+}
+.questions li a:hover, .questions li a:focus, .questions li a:active {
+color: lightgreen;
+}
+.vacancies {
+display: flex;
+flex-direction: column;
+align-content: center;
+align-self: center;
+justify-content: space-between;
+font-size: 1.125em;
+}
+.vacancies li { 
+color: hsla(68, 100%, 33%, .9);
+transition: all .5s ease-in-out;
+}
+.vacancies li:hover, .vacancies li:focus, .vacancies li:active {
+color: hsla(68, 100%, 65%, .9);
+}
